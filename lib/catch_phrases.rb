@@ -20,7 +20,8 @@ describe "any_phrase" do
 end
 
 describe "toadstool" do
- it "Sorry Mario, but our Princess is in another castle."
+ it "puts out 'Thank You Mario! But Our Princess Is In Another Castle!'" do
+   expect{toadstool}.to output("")
  end
 end
 
