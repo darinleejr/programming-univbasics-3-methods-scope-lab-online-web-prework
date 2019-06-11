@@ -5,6 +5,12 @@ describe "mario" do
   end
 end
 
+describe "toadstool" do
+ it "puts out 'Thank You Mario! But Our Princess Is In Another Castle!'" do
+   expect{toadstool}.to output("Thank You Mario! But Our Princess Is In Another Castle!\n").to_stdout
+ end
+end
+
 describe "link" do
   it "puts out 'It's Dangerous To Go Alone! Take This.'" do
     expect{link}.to output("It's Dangerous To Go Alone! Take This.\n").to_stdout
@@ -17,12 +23,6 @@ describe "any_phrase" do
     
     expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
   end
-end
-
-describe "toadstool" do
- it "puts out 'Thank You Mario! But Our Princess Is In Another Castle!'" do
-   expect{toadstool}.to output("Thank You Mario! But Our Princess Is In Another Castle!\n").to_stdout
- end
 end
 
 def mario
