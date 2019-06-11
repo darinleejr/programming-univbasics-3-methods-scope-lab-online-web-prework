@@ -19,8 +19,9 @@ describe "any_phrase" do
   end
 end
 
-def toadstool
-  puts status
+describe "toadstool" do
+ it "Sorry Mario, but our Princess is in another castle."
+ end
 end
 
 def mario
