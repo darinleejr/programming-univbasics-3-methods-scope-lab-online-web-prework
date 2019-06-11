@@ -24,8 +24,3 @@ describe "any_phrase" do
     expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
   end
 end
-
-def mario
-  phrase = 'Thank You Mario! But Our Princess Is In Another Castle!'
-  puts phrase
-end
